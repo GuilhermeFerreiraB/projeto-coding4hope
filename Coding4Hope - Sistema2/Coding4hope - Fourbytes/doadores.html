@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css'>
+	<title>Doadores</title>
+</head>
+<body>
+
+	<div class="sidebar">
+
+		<div class="logo"><div class="logo_nome">Sistema C4H</div></div>
+
+			<ul class="nav_list">
+				<li>
+					<a href="dashboard.html">
+						<i class='bx bx-grid-alt'></i>
+						<span>Dashboard</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="doadores.html">
+						<i class='bx bx-donate-heart'></i>
+						<span>Doadores</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="parceiros.html">
+						<i class='bx bxs-institution'></i>
+						<span>Parceiros</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="visitas.html">
+						<i class='bx bx-calendar'></i>
+						<span>Visitas</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="perfil.html">
+						<i class='bx bxs-user'></i>
+						<span>Perfil</span>
+					</a>
+				</li>
+
+			</ul>	
+	</div>
+
+	<nav>
+		<li>
+			<h1>Doadores</h1>
+		</li>
+		<li>
+			<a href="perfil.html" class="nav_perfil">
+				<span>Lucas Santos</span>
+				<img src="./elementos/perfil placeholder.jpg" alt="" class="foto_perfil">
+			</a>
+		</li>
+	</nav>
+
+	<div class="main">
+		<div class="itens_tabela_info">
+			<table>
+				<tr>
+					<th>Nome</th>
+					<th>Celular</th>
+					<th>E-mail</th>
+					<th>Doações Feitas</th>
+					<th>Total Doado</th>
+					<th class="acoes">Ações</th>
+				</tr>
+				<tr>
+					<td>Geraldo Sérgio Bernardo Moura</td>
+					<td>(96) 99682-0553</td>
+					<td>geraldo.moura@exemplo.com</td>
+					<td>1</td>
+					<td>R$200,00</td>
+					<td class="acoes">
+						<button class="editar">Editar</button>
+						<button class="excluir">Excluir</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Joana Vera Marcela Pereira</td>
+					<td>(86) 99707-6670</td>
+					<td>joana.pereira@exemplo.com</td>
+					<td>3</td>
+					<td>R$750,00</td>
+					<td class="acoes">
+						<button class="editar">Editar</button>
+						<button class="excluir">Excluir</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Rayssa Andreia Isabel Nunes</td>
+					<td>(44) 98130-3171</td>
+					<td>rayssa.nunes@exemplo.com</td>
+					<td>1</td>
+					<td>R$50,00</td>
+					<td class="acoes">
+						<button class="editar">Editar</button>
+						<button class="excluir">Excluir</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Pedro Luiz Ruan Ferreira</td>
+					<td>(82) 98626-9213</td>
+					<td>pedro.ferreira@exemplo.com</td>
+					<td>4</td>
+					<td>R$125,00</td>
+					<td class="acoes">
+						<button class="editar">Editar</button>
+						<button class="excluir">Excluir</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Sabrina Maya Pinto</td>
+					<td>(85) 99647-9373</td>
+					<td>sabrina.pinto@exemplo.com</td>
+					<td>0</td>
+					<td>R$0,00</td>
+					<td class="acoes">
+						<button class="editar">Editar</button>
+						<button class="excluir">Excluir</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="cadastro">
+			<h2>Cadastrar Doador</h2>
+			<br>
+			<form action="">
+				<div class="item_form">
+					<p>Nome Completo</p>
+					<input type="text" placeholder="Nome"/>
+					<input type="text" placeholder="Sobrenome"/>
+				</div>
+				<div class="item_form">
+					<p>Gênero</p>
+					<input type="radio" id="masc" name="genero" value="Masculino" required/>
+					<label for="masc">Masculino</label>
+					<input type="radio" id="fem" name="genero" value="Feminino" required/>
+					<label for="fem">Feminino</label>
+					<input type="radio" id="outros" name="genero" value="Outros" required/>
+					<label for="outros">Outros</label>
+				</div>
+				<div class="item_form">
+					<p>Data de Nascimento</p>
+					<input type="date" required/>
+				</div>
+				<div class="item_form">
+					<p>RG</p>
+					<input type="text" placeholder="__.___.___-_" required/>
+				</div>
+				<div class="item_form">
+					<p>CPF</p>
+					<input type="text" placeholder="___.___.___-__" required/>
+				</div>
+				<div class="item_form">
+					<p>E-mail</p>
+					<input type="text" placeholder="email@exemplo.com" required/>
+				</div>
+				<div class="item_form">
+					<p>CEP</p>
+					<input type="text" placeholder="_____-___" required/>
+				</div>
+				<div class="item_form">
+					<p>Endereço</p>
+					<input type="text" required/>
+				</div>
+				<div class="item_form">
+					<p>Número</p>
+					<input type="text" required/>
+				</div>
+				<div class="item_form">
+					<p>Bairro</p>
+					<input type="text" required/>
+				</div>
+				<div class="item_form">
+					<p>Cidade</p>
+					<input type="text" required/>
+				</div>
+				<div class="item_form">
+					<p>Estado</p>
+					<input type="text" required/>
+				</div>
+				<div class="item_form">
+					<p>Celular</p>
+					<input type="text" placeholder="(__)_____-____" required/>
+				</div>
+				<br>
+				<button type="submit" class="registrar">Registrar</button>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
